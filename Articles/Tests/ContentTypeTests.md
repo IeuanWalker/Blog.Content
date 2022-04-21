@@ -44,30 +44,124 @@ Unordered list
 
 Code
 
-`Small string`
+`Small code string`
 
 ```csharp
+using System;
 
+namespace HelloWorld
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      Console.WriteLine("Hello World!");    
+    }
+  }
+}
 ```
 
 ```xml
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:XamlSamples"
+             x:Class="XamlSamples.MainPage">
 
+    <StackLayout>
+        <!-- Place new controls here -->
+        <Label Text="Welcome to Xamarin Forms!"
+               VerticalOptions="Center"
+               HorizontalOptions="Center" />
+    </StackLayout>
+
+</ContentPage>
 ```
 
 ```html
+<!DOCTYPE html>
+<html>
+<body>
 
+<h1>My First Heading</h1>
+
+<p>My first paragraph.</p>
+  
+<p id="demo">JavaScript can change HTML content.</p>
+
+<button type="button" onclick='document.getElementById("demo").innerHTML = "Hello JavaScript!"'>Click Me!</button>
+
+</body>
+</html>
 ```
 
 ```js
+// program to check the number of occurrence of a character
 
+function countString(str, letter) {
+    let count = 0;
+
+    // looping through the items
+    for (let i = 0; i < str.length; i++) {
+
+        // check if the character is at that position
+        if (str.charAt(i) == letter) {
+            count += 1;
+        }
+    }
+    return count;
+}
+
+// take input from the user
+const string = prompt('Enter a string: ');
+const letterToCheck = prompt('Enter a letter to check: ');
+
+//passing parameters and calling the function
+const result = countString(string, letterToCheck);
+
+// displaying the result
+console.log(result);
 ```
 
 ```css
+body {
+  font: 100% Helvetica, sans-serif;
+  color: #333;
+}
+```
 
+```scss
+$font-stack: Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+}
 ```
 
 ```json
-
+{
+    "glossary": {
+        "title": "example glossary",
+		"GlossDiv": {
+            "title": "S",
+			"GlossList": {
+                "GlossEntry": {
+                    "ID": "SGML",
+					"SortAs": "SGML",
+					"GlossTerm": "Standard Generalized Markup Language",
+					"Acronym": "SGML",
+					"Abbrev": "ISO 8879:1986",
+					"GlossDef": {
+                        "para": "A meta-markup language, used to create markup languages such as DocBook.",
+						"GlossSeeAlso": ["GML", "XML"]
+                    },
+					"GlossSee": "markup"
+                }
+            }
+        }
+    }
+}
 ```
 
 ```
