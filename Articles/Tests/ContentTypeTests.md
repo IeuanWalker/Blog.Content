@@ -210,13 +210,6 @@ Here's a sentence with a footnote. [^1]
 
 ---
 
-Definition List
-
-term
-: definition
-
----
-
 ~~strikethrough~~
 
 ---
