@@ -220,7 +220,7 @@ Here's a sentence with a footnote. [^1]
 
 ---
 
-That is so funny! :joy:
+That is so funny! :joy: :ok_hand:
 
 ---
 
